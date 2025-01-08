@@ -1,0 +1,65 @@
+body {
+    margin: 10px 5px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#calendar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 700px) {
+  
+    body {
+        margin: 5px 2px; /* Reduz ainda mais as margens para dispositivos móveis */
+        font-size: 14px;  /* Mantém o tamanho da fonte legível em dispositivos móveis */
+    }
+    #calendar {
+        width: 80vw;      /* Garante que o calendário ocupe toda a largura da tela */
+        height: 70vh;    /* Define a altura do calendário como 80% da altura da tela */
+        overflow-x: auto;  /* Adiciona rolagem horizontal se necessário */
+    }
+    .modal-dialog {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+   
+    }
+    .modal-content {
+        height: 100%;
+        border-radius: 0;
+    }
+    .fc-toolbar {
+        flex-wrap: wrap; /* Permite que os elementos se ajustem em múltiplas linhas */
+        text-align: center;
+    }
+
+    .fc-header-toolbar .fc-left,
+    .fc-header-toolbar .fc-right {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .fc-dayGridMonth-view,
+    .fc-timeGridWeek-view,
+    .fc-timeGridDay-view,
+    .fc-timeGridlist-view {
+        padding: 0 10px; /* Adiciona padding nas laterais para evitar sobreposição */
+    }
+
+    .fc-event {
+        font-size: 14px; /* Aumenta o tamanho da fonte dos eventos para visibilidade */
+    }
+
+    .fc-dayGridMonth-view .fc-daygrid-day-frame {
+        min-width: 0px; /* Define uma largura mínima para cada célula do dia */
+    }
+}
+
+
+
