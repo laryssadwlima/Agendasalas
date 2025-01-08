@@ -5,7 +5,7 @@ $host = "";
 $user = "";
 $pass = "";
 $dbname = "";
-$port =;
+$port = "";
 
 try {
     // Conexão com a porta
